@@ -1957,7 +1957,7 @@ router.get('/news/cnbc', async (req, res, next) => {
             type = req.query.type
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!type) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter type"})
 
        fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/cnbc-news/${type}`))
@@ -1980,7 +1980,7 @@ router.get('/news/republika', async (req, res, next) => {
             type = req.query.type
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!type) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter type"})
 
        fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/republika-news/${type}`))
@@ -2003,7 +2003,7 @@ router.get('/news/tempo', async (req, res, next) => {
             type = req.query.type
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!type) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter type"})
 
        fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/tempo-news/${type}`))
@@ -2026,7 +2026,7 @@ router.get('/news/antara', async (req, res, next) => {
             type = req.query.type
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!type) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter type"})
 
        fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/antara-news/${type}`))
@@ -2048,7 +2048,7 @@ router.get('/news/kumparan', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/kumparan-news`))
         .then(response => response.json())
@@ -2070,7 +2070,7 @@ router.get('/filmapik/search', async (req, res, next) => {
             film = req.query.film
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!film) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter film"})
 
        fetch(encodeURI(`https://filmapik-api-zahirr.herokuapp.com/search?q=${film}`))
@@ -2093,7 +2093,7 @@ router.get('/filmapik/kategori', async (req, res, next) => {
             film = req.query.film
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!film) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter film"})
 
        fetch(encodeURI(`https://filmapik-api-zahirr.herokuapp.com/category?search=${film}`))
@@ -2116,7 +2116,7 @@ router.get('/filmapik/play', async (req, res, next) => {
             id = req.query.id
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!id) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter id"})
 
        fetch(encodeURI(`https://filmapik-api-zahirr.herokuapp.com/play?id=${id}`))
@@ -2138,7 +2138,7 @@ router.get('/filmapik/terbaru', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://filmapik-api-zahirr.herokuapp.com/latest`))
         .then(response => response.json())
@@ -2292,7 +2292,7 @@ router.get('/lk21/genre', async (req, res, next) => {
             tipe = req.query.tipe
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!tipe) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter tipe"})
 
        fetch(encodeURI(`https://lk21-api-zahirr.herokuapp.com/genre?genre=${tipe}`))
@@ -2489,7 +2489,7 @@ router.get('/yutub/video', async (req, res, next) => {
             url = req.query.url
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
        fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/ytv?url=${url}`))
@@ -2497,7 +2497,7 @@ router.get('/yutub/video', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'zeeone',
+             	author: 'megumin',
                  result
              })
          })
@@ -2512,7 +2512,7 @@ router.get('/yutub/audio', async (req, res, next) => {
             url = req.query.url
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Alphabot') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'beta') return res.json(loghandler.invalidKey)
     if (!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
        fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/yta?url=${url}`))
@@ -2520,7 +2520,7 @@ router.get('/yutub/audio', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'zeeone',
+             	author: 'megumin',
                  result
              })
          })
